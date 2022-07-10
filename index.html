@@ -71,30 +71,64 @@
                             <div class="des">
                                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto nulla illum quae dolor, esse iste exercitationem saepe nihil eum!</p>
                             </div>
-                            <a href="" class="button btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Más Detalles</a>
+                            <button class="button btn1 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Más Detalles</button>
+                            <!-- MODAL DETALLE SERVICIO -->
                             <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body ">
                                     <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-4 p2">
-                                                <img class="card-img-top img-fluid" src="resources/etetica1.jpg" alt="">
-                                            </div>
-                                            <div class="col-sm-8 p2">
-                                                <div class="detalle-paquete">
-                                                    <h2 class="titulo2">Nombre del Servicio</h2>
-                                                    <badge class=" disponible">Disponible</badge>
-                                                    <badge class=" pendiente">Pendiente</badge>
-                                                    <badge class=" no-disponible">No disponible</badge>
+                                        <div class="card card-offcanvas ">
+                                            <div class="row g-0">
+                                                <div class="col-md-4 d-flex align-items-center">
+                                                    <img src="resources/etetica1.jpg" class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h2 class="titulo2">Nombre del Servicio</h2>
+                                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link active pills" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Descripción</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link pills" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Que Incluye</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link pills" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Comentarios</button>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content" id="pills-tabContent">
+                                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                                <div class="estados ">
+                                                                    <badge class="disponible">Disponible</badge>
+                                                                    <badge class="pendiente">Pendiente</badge>
+                                                                    <badge class="no-disponible">No disponible</badge>
+                                                                </div>
+                                                                <div class="info-canvas">
+                                                                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ab sed exercitationem, aperiam officiis possimus rem laboriosam corporis, sequi dicta, corrupti necessitatibus aut nostrum
+                                                                        illum soluta vel consequuntur excepturi! Recusandae.</p>
+                                                                    <h2 class="titulo2">$00.00</h2>
+                                                                    <a href="" class="button btn1 pt-2">Quiero esta cita</a>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                                                    xxx
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
 
@@ -192,6 +226,21 @@
 
 
         </div>
+        <hr>
+        <div class="container text-center p-4 m-4">
+            <h1 class="titulo1">Info Extra (Opcional)</h1>
+        </div>
+        <hr>
+        <div class="container text-center p-4 m-4">
+            <h1 class="titulo1">Info Extra (Opcional)</h1>
+        </div>
+        <hr>
+        <footer>
+            <h1 class="titulo1">Footer</h1>
+            <h2 class="titulo2">Links</h2>
+            <h2 class="titulo2">Redes Sociales</h2>
+            <h2 class="titulo2">Formulario de ContCTO</h2>
+        </footer>
     </div>
     <!--     <header class="header-section">
         <nav class="navbar navbar-expand-lg ">
